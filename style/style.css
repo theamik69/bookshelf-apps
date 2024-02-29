@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #040404;
+  --second-bg-color: #323946;
+  --text-color: #f2f1f2;
+  --main-color: #95a1f9;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+.bgcolor {
+  background: var(--second-bg-color);
+}
+
+.bgcolormain {
+  background: var(--main-color);
+}
+
+.maincolor {
+  color: var(--main-color);
+}
+
+.textcolor {
+  color: var(--text-color);
+}
+
+.table {
+  border-spacing: 0 15px;
+}
+
+i {
+  font-size: 1rem !important;
+}
+
+.table tr {
+  border-radius: 20px;
+}
+
+tr td:nth-child(n + 5),
+tr th:nth-child(n + 5) {
+  border-radius: 0 0.625rem 0.625rem 0;
+}
+
+tr td:nth-child(1),
+tr th:nth-child(1) {
+  border-radius: 0.625rem 0 0 0.625rem;
+}
+
+.delete-button {
+  position: relative;
+  cursor: pointer;
+}
+
+.delete-button::before {
+  content: "DELETE";
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(230, 3, 3);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -25px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.delete-button:hover::before {
+  display: inline-block;
+}
+
+.edit-button {
+  position: relative;
+  cursor: pointer;
+}
+
+.edit-button::before {
+  content: "EDIT";
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(1, 255, 35);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -25px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.edit-button:hover::before {
+  display: inline-block;
+}
+
