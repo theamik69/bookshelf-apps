@@ -70,7 +70,7 @@ tr th:nth-child(1) {
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;
-  top: -25px; 
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -93,7 +93,7 @@ tr th:nth-child(1) {
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;
-  top: -25px; 
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -102,3 +102,35 @@ tr th:nth-child(1) {
   display: inline-block;
 }
 
+.note-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: 100px;
+  background-color: var(--main-color);
+}
+
+.note-footer_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.note-footer_icon {
+  width: 50px;
+  height: 50px;
+  color: rgb(79, 32, 13);
+}
+
+#icon {
+  font-size: 2rem !important;
+  color: rgb(79, 32, 13);
+}
+
+.note-footer_icon_group {
+  display: flex;
+  gap: 10px;
+}
